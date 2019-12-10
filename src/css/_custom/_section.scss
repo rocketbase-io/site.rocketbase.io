@@ -56,9 +56,6 @@
     &.is-centered {
       margin: 10px auto;
     }
-    &.extra-margin-bottom {
-      margin-bottom: 20px;
-    }
   }
 
   figure.icon {
@@ -150,4 +147,33 @@ figure.map {
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
   transform: rotate(-2deg);
   margin: 1rem;
+}
+
+.open-source-projects {
+  figure {
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    background-color: #fafafa;
+    margin: 5px;
+    min-height: 380px;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+  .media {
+    margin: 0.5em;
+    img {
+      margin: 0.2em;
+    }
+    .media-left {
+      text-align: center;
+      img {
+        margin: 5px auto;
+      }
+    }
+  }
+}
+
+.extra-margin-bottom {
+  margin-bottom: 20px;
 }
