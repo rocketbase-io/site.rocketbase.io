@@ -36,7 +36,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksShortcode("githubProject", function(username, repro) {
     return `
               <a href="https://github.com/${username}/${repro}"><img src="/img/icons/github.svg" class="image is-24x24" alt="github - ${repro}"></a>
-              <img src="http://githubbadges.com/star.svg?user=${username}&repo=${repro}&style=flat&color=fff&background='" alt="star count">
+              <img src="https://githubbadges.com/star.svg?user=${username}&repo=${repro}&style=flat&color=fff&background='" alt="star count">
     `;
   });
 
