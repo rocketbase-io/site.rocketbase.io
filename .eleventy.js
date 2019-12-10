@@ -5,8 +5,6 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
-const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 const pluginSass = require("eleventy-plugin-sass");
 
 
@@ -19,8 +17,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
-  // eleventyConfig.addPlugin(lazyImagesPlugin);
-  eleventyConfig.addPlugin(cacheBuster({}));
   eleventyConfig.addPlugin(pluginSass, {sourcemaps: true, watch: ['src/**/*.scss', '!node_modules/**']});
 
   eleventyConfig.setDataDeepMerge(true);
