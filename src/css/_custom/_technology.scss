@@ -1,3 +1,48 @@
+
+.tech-stack {
+  a, a:hover {
+    text-decoration: none;
+  }
+  .tech {
+    position: relative;
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    margin: 0 0.2em 0.2em 0;
+    width: 145px;
+    display: inline-block;
+    padding: 6px 12px 6px 35px;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 0.85714286em;
+
+    &:hover {
+      color: #666666;
+    }
+
+    i {
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 0 6px;
+      border-radius: 6px 0 0 6px;
+      font-size: 16px;
+      line-height: 35px;
+    }
+  }
+
+}
+
+
 @font-face {
   font-family: "technology";
   src: url("../fonts/technology.eot");
@@ -36,17 +81,61 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+// copy of fontastic
+
+
 .tech-aws:before {
   content: "\61";
 }
+.tech-vue:before {
+  content: "\62";
+}
+.tech-database:before {
+  content: "\63";
+}
+.tech-vaadin:before {
+  content: "\64";
+}
+.tech-spring-boot:before {
+  content: "\65";
+}
+.tech-spring:before {
+  content: "\66";
+}
+.tech-npm:before {
+  content: "\67";
+}
+.tech-mongo:before {
+  content: "\68";
+}
+.tech-kubernetes:before {
+  content: "\69";
+}
+.tech-jwt:before {
+  content: "\6a";
+}
+.tech-js:before {
+  content: "\6b";
+}
+.tech-github:before {
+  content: "\6c";
+}
+.tech-elasticsearch:before {
+  content: "\6d";
+}
+.tech-docker:before {
+  content: "\6e";
+}
+.tech-typescript:before {
+  content: "\6f";
+}
+
+
+// end copy - start custom colors
 
 .color-aws {
   background-color: #FF9900;
   color: #000;
-}
-
-.tech-vue:before {
-  content: "\62";
 }
 
 .color-vue {
@@ -54,26 +143,15 @@
   color: #fff;
 }
 
-.tech-database:before {
-  content: "\63";
-}
-
 .color-database {
   background-color: #383838;
   color: #fff;
 }
 
-.tech-vaadin:before {
-  content: "\64";
-}
 
 .color-vaadin {
   background-color: #00B4F0;
   color: #fff;
-}
-
-.tech-spring-boot:before {
-  content: "\65";
 }
 
 .color-spring-boot {
@@ -81,26 +159,16 @@
   color: #fff;
 }
 
-.tech-spring:before {
-  content: "\66";
-}
 
 .color-spring {
   background-color: #6DB33F;
   color: #fff;
 }
 
-.tech-npm:before {
-  content: "\67";
-}
 
 .color-npm {
   background-color: #CB3837;
   color: #fff;
-}
-
-.tech-mongo:before {
-  content: "\68";
 }
 
 .color-mongo {
@@ -108,35 +176,22 @@
   color: #499D4A;
 }
 
-.tech-kubernetes:before {
-  content: "\69";
-}
 
 .color-kubernetes {
   background-color: #fafafa;
   color: #326DE6;
 }
 
-.tech-jwt:before {
-  content: "\6a";
-}
 
 .color-jwt {
   background-color: #fafafa;
   color: #000
 }
 
-.tech-js:before {
-  content: "\6b";
-}
 
 .color-js {
   background-color: #f1f1f1;
   color: #539E43;
-}
-
-.tech-github:before {
-  content: "\6c";
 }
 
 .color-github {
@@ -144,20 +199,19 @@
   color: #000
 }
 
-.tech-elasticsearch:before {
-  content: "\6d";
-}
 
 .color-elasticsearch {
   background-color: #fafafa;
   color: #F9B110;
 }
 
-.tech-docker:before {
-  content: "\6e";
-}
 
 .color-docker {
   background-color: #019BC6;
+  color: #fff;
+}
+
+.color-typescript {
+  background-color: #007ACC;
   color: #fff;
 }
