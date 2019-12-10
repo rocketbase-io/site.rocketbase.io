@@ -1,0 +1,72 @@
+.concrete-white-background-image {
+  @media all and (max-width: 800px) {
+    background-image: url("../img/background/concrete-white-800.jpg");
+  }
+  @media all and (min-width: 801px) {
+    background-image: url("../img/background/concrete-white-1200.jpg");
+  }
+  @media all and (min-width: 1201px) {
+    background-image: url("../img/background/concrete-white.jpg");
+  }
+  background-size: cover;
+  text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+}
+
+.team-background-image {
+  @media all and (max-width: 800px) {
+    background-image: url("../img/background/team-800.jpg");
+  }
+  @media all and (min-width: 801px) {
+    background-image: url("../img/background/team-1200.jpg");
+    background-position: top center;
+  }
+  @media all and (min-width: 1201px) {
+    background-image: url("../img/background/team.jpg");
+    background-position: top center;
+  }
+  background-size: cover;
+  text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+}
+
+.work-desk-background-image {
+
+  @media all and (max-width: 800px) {
+    background-image: url("../img/background/concrete-white-800.jpg");
+  }
+  @media all and (min-width: 801px) {
+    background-image: url("../img/background/work-desk-1200.jpg");
+  }
+  @media all and (min-width: 1201px) {
+    background-image: url("../img/background/work-desk.jpg");
+  }
+  background-position: bottom center;
+  background-size: cover;
+  text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+}
+
+.framed-margin {
+  margin: 80px 1.8vw 1.8vw 1.8vw;
+}
+
+.frame-1 {
+  background-image: url("../img/background/frame-1.svg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.frame-2 {
+  background-image: url("../img/background/frame-2.svg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main-frame-wrapper {
+  position: relative;
+  margin: -2px -2px -2px -2px;
+}
+
+.light-gray-bg {
+  background-color: $light-grey;
+}

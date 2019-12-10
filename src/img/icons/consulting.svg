@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <g id="consulting" transform="matrix(1,0,0,1.00503,0,-0.502513)">
+        <rect x="0" y="0.5" width="100" height="99.5" style="fill:none;"/>
+        <g transform="matrix(4.03524,0,0,4.01506,1.57716,2.06927)">
+            <path d="M6.583,7.75C7.313,7.751 8.035,7.603 8.706,7.316C8.502,5.711 7.121,4.495 5.503,4.495C4.35,4.495 3.282,5.112 2.706,6.11C3.723,7.158 5.123,7.75 6.583,7.75Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+            <circle cx="5.5" cy="7.75" r="3.25" style="fill:none;stroke:black;stroke-width:1px;"/>
+            <path d="M7.545,23.5L8,20.5L10.5,20.5L10.5,17.5C10.5,14.757 8.243,12.5 5.5,12.5C2.757,12.5 0.5,14.757 0.5,17.5L0.5,20.5L3,20.5L3.455,23.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+            <path d="M5.5,14.875L5.5,17.875" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+            <path d="M23.5,9.5C23.5,10.049 23.049,10.5 22.5,10.5L17,10.5L13.5,13.5L13.5,10.5L12.5,10.5C11.951,10.5 11.5,10.049 11.5,9.5L11.5,1.5C11.5,0.951 11.951,0.5 12.5,0.5L22.5,0.5C23.049,0.5 23.5,0.951 23.5,1.5L23.5,9.5Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+        </g>
+    </g>
+</svg>

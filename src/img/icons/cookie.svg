@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <g transform="matrix(1,0,0,1,-385,-289)">
+        <g id="cookie" transform="matrix(1,0,0,1.00503,385.284,288.683)">
+            <rect x="0" y="0.5" width="100" height="99.5" style="fill:none;"/>
+            <g transform="matrix(4.04885,0,0,4.0286,1.4138,1.88755)">
+                <path d="M20,6.88C18.494,6.879 17.113,6.022 16.443,4.674C16.358,4.505 16.185,4.398 15.996,4.398C15.917,4.398 15.839,4.417 15.769,4.453C15.222,4.734 14.615,4.88 14,4.88C11.806,4.88 10,3.074 10,0.88C10,0.88 10,0.88 10,0.88C10,0.737 9.883,0.62 9.74,0.62C9.722,0.62 9.704,0.621 9.687,0.625C4.359,1.719 0.5,6.451 0.5,11.89C0.5,18.199 5.691,23.39 12,23.39C18.309,23.39 23.5,18.199 23.5,11.89C23.5,11.887 23.5,11.883 23.5,11.88C23.5,10.098 23.081,8.342 22.277,6.752C22.157,6.514 21.866,6.411 21.623,6.522C21.114,6.757 20.56,6.879 20,6.88Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <circle cx="8" cy="8.88" r="2" style="fill:none;stroke:black;stroke-width:1px;"/>
+                <circle cx="15" cy="13.88" r="1" style="fill:none;stroke:black;stroke-width:1px;"/>
+                <circle cx="9" cy="16.88" r="2" style="fill:none;stroke:black;stroke-width:1px;"/>
+                <path d="M4,12.63C4.137,12.63 4.25,12.743 4.25,12.88C4.25,13.017 4.137,13.13 4,13.13C3.863,13.13 3.75,13.017 3.75,12.88C3.75,12.743 3.863,12.63 4,12.63" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M15,18.63C15.137,18.63 15.25,18.743 15.25,18.88C15.25,19.017 15.137,19.13 15,19.13C14.863,19.13 14.75,19.017 14.75,18.88C14.75,18.743 14.863,18.63 15,18.63" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M16,9.63C16.137,9.63 16.25,9.743 16.25,9.88C16.25,10.017 16.137,10.13 16,10.13C15.863,10.13 15.75,10.017 15.75,9.88C15.75,9.743 15.863,9.63 16,9.63" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

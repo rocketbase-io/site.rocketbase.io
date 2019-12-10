@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <g transform="matrix(1,0,0,1,-131,-155)">
+        <g id="frontend" transform="matrix(1,0,0,1.00503,131.673,154.907)">
+            <rect x="0" y="0.5" width="100" height="99.5" style="fill:none;"/>
+            <g transform="matrix(3.94755,0,0,3.92781,2.62943,3.11628)">
+                <circle cx="7" cy="8.5" r="3.5" style="fill:none;stroke:black;stroke-width:1px;"/>
+                <path d="M7,5L7,8.5L10.5,8.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M9,22.5C9.906,21.356 10.43,19.957 10.5,18.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M15,22.5C14.094,21.356 13.57,19.957 13.5,18.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M7.499,22.5L16.499,22.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M0.5,15.5L23.5,15.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M23.5,1.753C23.5,1.614 23.386,1.5 23.247,1.5L0.753,1.5C0.614,1.5 0.5,1.614 0.5,1.753L0.5,18.247C0.5,18.386 0.614,18.5 0.753,18.5L23.247,18.5C23.386,18.5 23.5,18.386 23.5,18.247L23.5,1.753Z" style="fill:none;stroke:black;stroke-width:1px;"/>
+                <path d="M13.5,7L15,5L18,7.5L20.5,4.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M19.5,12.5L19.5,11" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M17.5,12.5L17.5,10.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M15.5,12.5L15.5,9.5" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+                <path d="M13.5,12.5L13.5,11" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

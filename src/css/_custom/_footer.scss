@@ -1,0 +1,46 @@
+footer.footer {
+  padding: 5rem 1.5rem !important;
+  background: $blue-grey;
+  .footer-nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    .footer-nav-link {
+      margin: 0 10px;
+      padding: 20px 0;
+      color: $white !important;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        color: $smoke-white !important;
+        border-bottom: 2px solid $white;
+      }
+      &.is-active {
+        color: $primary !important;
+        border-bottom: 2px solid $primary !important;
+      }
+    }
+
+  }
+  .level-item .icon {
+    color: $white;
+    transition: all 0.5s;
+    :hover {
+      color: $primary;
+    }
+  }
+  .moto {
+    color: $white;
+  }
+}
+
+.contact {
+h4 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+.from-hamburg {
+  width: 200px;
+  height: 200px;
+}
+}
