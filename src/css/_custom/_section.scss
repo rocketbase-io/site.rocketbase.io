@@ -11,17 +11,23 @@
 
   &-menu {
     .navbar-item {
-      &:hover {
-        background-color: transparent;
-        color: $primary;
+      a {
+        color: $grey-3;
+
+        &:hover {
+          background-color: transparent;
+          color: $primary;
+        }
+      }
+
+      &.active {
+        a {
+          color: $grey-3;
+          text-decoration: underline;
+        }
       }
     }
 
-    &.is-active {
-      .navbar-item {
-        color: $dark;
-      }
-    }
   }
 }
 
@@ -179,13 +185,16 @@ figure.map {
 
   .content {
     padding: 1em 1em 0.2em 1em;
+
     h2 {
       font-weight: 600;
       font-size: 1.1em;
     }
   }
+
   .badges {
     margin-left: 1em;
+
     .tech {
       width: 165px;
       padding: 4px 12px 4px 35px;

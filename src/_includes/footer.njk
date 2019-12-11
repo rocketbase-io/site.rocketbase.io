@@ -9,7 +9,7 @@
       <div class="column">
         <div class="media">
           <div class="media-left is-hidden-mobile">
-            <img src="/img/from-hamburg.svg"  alt="from hamburg"  class="from-hamburg">
+            <img src="/img/from-hamburg.svg" alt="from hamburg" class="from-hamburg">
           </div>
           <div class="media-content">
             <h3>Interesse geweckt?</h3>
@@ -38,39 +38,46 @@
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-6">
-        <div class="mb-20">
-          <img class="small-footer-logo" src="/img/logo-light.png" alt="">
-        </div>
-        <div>
-        </div>
-        <div class="column">
-          {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
-            listElement: "div",
-            listItemElement: "a",
+        <img class="small-footer-logo" src="/img/logo-light.png" alt="">
+        <p class="moto">made with ♥ in Hamburg &copy; 2019</p>
+      </div>
+      <div class="column">
+        <h2>Seiten</h2>
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+          listElement: "ul",
+          listItemElement: "li",
 
-            listClass: "footer-nav-right",
-            listItemClass: "footer-nav-link",
-            activeKey: "active",
-            showExcerpt: false
-          }) | safe }}
-        </div>
+          listClass: "footer-nav",
+          listItemClass: "footer-nav-link",
+          activeListItemClass: "active",
+          activeKey: eleventyNavigation.key,
+          showExcerpt: false
+        }) | safe }}
+      </div>
+      <div class="column">
+        <h2>Profile</h2>
+        <ul>
+          <li><a href="https://github.com/rocketbase-io">Github</a></li>
+          <li><a href="https://hub.docker.com/r/rocketbaseio/">Docker-Hub</a></li>
+          <li><a href="https://www.npmjs.com/~rocketbase-io">npmjs.com</a></li>
+          <li><a href="https://www.xing.com/companies/rocketbase.iosoftwareproductionsgmbh">Xing</a></li>
+        </ul>
       </div>
     </div>
-    <div class="columns is-clearfix">
+    <div class="columns">
       <div class="column">
-        <div class="footer-nav-link">
-          <a href="/imprint/">Impressum</a>
-        </div>
-        <div class="footer-nav-link">
-          <a href="/privacy/">Datenschutzbestimmungen</a>
-        </div>
+        <ul class="display-inline">
+          <li><a href="/imprint/">Impressum</a></li>
+          <li><a href="/privacy/">Datenschutzbestimmungen</a></li>
+        </ul>
       </div>
-      <div class="column">
-        <ul class="social-list list-inline list--hover">
-          <li><a href="https://www.xing.com/companies/rocketbase.iosoftwareproductionsgmbh"><i class="socicon socicon-xing icon icon--xs"></i></a>
+      <div class="column is-narrow has-text-right">
+        <ul class="display-inline">
+          <li><a href="https://www.xing.com/companies/rocketbase.iosoftwareproductionsgmbh"><img
+                src="/img/icons/xing.svg" class="image is-32x32"></a></li>
+          <li><a href="https://github.com/rocketbase-io"><img src="/img/icons/github.svg" class="image is-32x32"></a>
           </li>
-          <li><a href="https://github.com/rocketbase-io"><i class="socicon socicon-github icon icon--xs"></i></a></li>
-          <li><a href="mailto:info@rocketbase.io"><i class="socicon socicon-mail icon icon--xs"></i></a></li>
+          <li><a href="mailto:info@rocketbase.io"><img src="/img/icons/email.svg" class="image is-32x32"></a></li>
         </ul>
       </div>
     </div>

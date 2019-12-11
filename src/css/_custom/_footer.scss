@@ -1,46 +1,59 @@
 footer.footer {
-  padding: 5rem 1.5rem !important;
+  padding: 5rem 1.5rem;
   background: $blue-grey;
-  .footer-nav-right {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: center;
-    .footer-nav-link {
-      margin: 0 10px;
-      padding: 20px 0;
-      color: $white !important;
-      border-bottom: 2px solid transparent;
-      &:hover {
-        color: $smoke-white !important;
-        border-bottom: 2px solid $white;
-      }
-      &.is-active {
-        color: $primary !important;
-        border-bottom: 2px solid $primary !important;
-      }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $smoke-white;
+      border-bottom: 2px solid $white;
     }
 
-  }
-  .level-item .icon {
-    color: $white;
-    transition: all 0.5s;
-    :hover {
+    &.is-active {
       color: $primary;
+      border-bottom: 2px solid $primary;
     }
   }
+
   .moto {
-    color: $white;
+    color: $smoke-white;
+  }
+
+  ul.display-inline {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .footer-nav-link {
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    color: $ultra-light-grey;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 1em;
   }
 }
 
 .contact {
-h4 {
-  font-size: 1.5em;
-  margin: 0.5em 0;
-}
-.from-hamburg {
-  width: 200px;
-  height: 200px;
-}
+  h4 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+
+  .from-hamburg {
+    width: 200px;
+    height: 200px;
+  }
 }
