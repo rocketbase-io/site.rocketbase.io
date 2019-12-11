@@ -6,6 +6,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require("eleventy-plugin-sass");
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 
 module.exports = function(eleventyConfig) {
@@ -18,6 +19,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginSass, {sourcemaps: true, watch: ['src/**/*.scss', '!node_modules/**']});
+  eleventyConfig.addPlugin(lazyImagesPlugin);
 
   eleventyConfig.setDataDeepMerge(true);
 
