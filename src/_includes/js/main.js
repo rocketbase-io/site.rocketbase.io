@@ -1,3 +1,4 @@
+// {% raw %}
 // Event DOM ready
 var callback = function(){
   // trigger events on Dom ready.
@@ -68,3 +69,5 @@ if (
 } else {
   document.addEventListener("DOMContentLoaded", callback);
 }
+// {% endraw %}
+

@@ -6,18 +6,18 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require("eleventy-plugin-sass");
+const htmlmin = require("html-minifier");
 
 
 module.exports = function(eleventyConfig) {
 
   // Copy `img/` + `fonts/` to `_site/img`
   eleventyConfig.addPassthroughCopy("src/fonts");
-  eleventyConfig.addPassthroughCopy("src/js");
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(pluginSass, {sourcemaps: true, watch: ['src/**/*.scss', '!node_modules/**']});
+  eleventyConfig.addPlugin(pluginSass, {sourcemaps: false, watch: ['src/**/*.scss', '!node_modules/**']});
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -49,6 +49,17 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  // compress and combine js files
+  eleventyConfig.addFilter("jsmin", function(code) {
+    const UglifyJS = require("uglify-js");
+    let minified = UglifyJS.minify(code);
+    if( minified.error ) {
+      console.log("UglifyJS error: ", minified.error);
+      return code;
+    }
+    return minified.code;
+  });
+
   eleventyConfig.addPassthroughCopy("src/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/**/*.ico");
   eleventyConfig.addPassthroughCopy("src/**/*.png");
@@ -65,6 +76,19 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: "#"
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  // minify html
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if( outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
