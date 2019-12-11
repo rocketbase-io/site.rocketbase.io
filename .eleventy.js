@@ -35,11 +35,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
-  eleventyConfig.addNunjucksShortcode("githubProject", function(username, repro) {
-    return `
-              <a href="https://github.com/${username}/${repro}"><img src="/img/icons/github.svg" class="image is-24x24" alt="github - ${repro}"></a>
-              <img src="https://githubbadges.com/star.svg?user=${username}&repo=${repro}&style=flat&color=fff&background='" alt="star count">
-    `;
+  eleventyConfig.addNunjucksShortcode("githubStars", function(username, repro) {
+    // <a href="https://github.com/${username}/${repro}"><img src="/img/icons/github.svg" class="image is-24x24" alt="github - ${repro}"></a>
+    // <img src="https://githubbadges.com/star.svg?user=${username}&repo=${repro}&style=flat&color=fff&background='" alt="star count">
+    return `<iframe src="https://ghbtns.com/github-btn.html?user=${username}&amp;repo=${repro}&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>`;
   });
 
 
