@@ -61,7 +61,12 @@
 
     &.is-centered {
       margin: 10px auto;
+
+      &.extra-margin-bottom {
+        margin-bottom: 20px;
+      }
     }
+
   }
 
   figure.icon {
