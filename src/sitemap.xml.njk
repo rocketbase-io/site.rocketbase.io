@@ -11,12 +11,14 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ page.date | htmlDateString }}</lastmod>
   </url>
 {%- endfor %}
+
   <url>
-    <loc>https://rocketbase.io/imprint/</loc>
+    <loc>{{ metadata.url }}/imprint/</loc>
     <lastmod>2019-12-07</lastmod>
   </url>
+
   <url>
-    <loc>https://rocketbase.io/privacy/</loc>
+    <loc>{{ metadata.url }}/privacy/</loc>
     <lastmod>2019-12-07</lastmod>
   </url>
 </urlset>
