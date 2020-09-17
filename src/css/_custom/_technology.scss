@@ -9,7 +9,7 @@
     -webkit-transition: 0.1s linear;
     -moz-transition: 0.1s linear;
     margin: 0 0.2em 0.2em 0;
-    width: 145px;
+    width: 165px;
     display: inline-block;
     padding: 6px 12px 6px 35px;
     line-height: 1.42857143;
@@ -34,14 +34,13 @@
       top: 0;
       background-color: rgba(0, 0, 0, 0.1);
       padding: 0 6px;
-      border-radius: 6px 0 0 6px;
+      border-radius: 4px 0 0 4px;
       font-size: 16px;
       line-height: 35px;
     }
   }
 
 }
-
 
 @font-face {
   font-family: "technology";
@@ -129,6 +128,22 @@
 .tech-typescript:before {
   content: "\6f";
 }
+.tech-svelte:before {
+  content: "\70";
+}
+.tech-11ty:before {
+  content: "\71";
+}
+.tech-firebase:before {
+  content: "\72";
+}
+.tech-flutter:before {
+  content: "\73";
+}
+.tech-mariadb:before {
+  content: "\74";
+}
+
 
 
 // end copy - start custom colors
@@ -213,5 +228,30 @@
 
 .color-typescript {
   background-color: #007ACC;
+  color: #fff;
+}
+
+.color-svelte {
+  background-color: #FF3E00;
+  color: #fff;
+}
+.color-11ty {
+  background-color: #222222;
+  color: #fff;
+}
+.color-firebase {
+  background-color: #FFCC32;
+  color: #fff;
+}
+.color-flutter {
+  background-color: #47C5FB;
+  color: #fff;
+}
+.color-mariadb {
+  background-color: #231F20;
+  color: #fff;
+}
+.color-database {
+  background-color: #6ab0dc;
   color: #fff;
 }
