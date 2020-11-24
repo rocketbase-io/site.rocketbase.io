@@ -8,7 +8,6 @@ const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require("eleventy-plugin-sass");
 const htmlmin = require("html-minifier");
 
-
 module.exports = function(eleventyConfig) {
 
   // Copy `img/` + `fonts/` to `_site/img`
