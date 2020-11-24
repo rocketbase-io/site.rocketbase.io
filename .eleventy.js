@@ -1,5 +1,5 @@
 const { DateTime } = require("luxon");
-const fs = require("fs");
+const { promises: fs, readFileSync } = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
@@ -7,6 +7,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require("eleventy-plugin-sass");
 const htmlmin = require("html-minifier");
+const { exec } = require("child_process");
 
 module.exports = function(eleventyConfig) {
 
@@ -48,17 +49,6 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  // compress and combine js files
-  eleventyConfig.addFilter("jsmin", function(code) {
-    const UglifyJS = require("uglify-js");
-    let minified = UglifyJS.minify(code);
-    if( minified.error ) {
-      console.log("UglifyJS error: ", minified.error);
-      return code;
-    }
-    return minified.code;
-  });
-
   eleventyConfig.addPassthroughCopy("src/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/**/*.ico");
   eleventyConfig.addPassthroughCopy("src/**/*.png");
@@ -79,12 +69,11 @@ module.exports = function(eleventyConfig) {
   // minify html
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
-      let minified = htmlmin.minify(content, {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true
       });
-      return minified;
     }
     return content;
   });
@@ -95,13 +84,15 @@ module.exports = function(eleventyConfig) {
     port: 5555,
     callbacks: {
       ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404/index.html');
+        const content_404 = readFileSync('_site/404/index.html');
 
         browserSync.addMiddleware("*", (req, res) => {
           // Provides the 404 content without redirect.
           res.write(content_404);
           res.end();
         });
+
+        exec("npm run build:js");
       }
     }
   });

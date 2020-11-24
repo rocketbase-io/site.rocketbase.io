@@ -1,4 +1,7 @@
-// {% raw %}
+import "./cookieconsent";
+import "./swiper";
+import "./tracking";
+
 // Event DOM ready
 var callback = function(){
   // trigger events on Dom ready.

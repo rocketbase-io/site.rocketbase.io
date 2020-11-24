@@ -23,13 +23,6 @@
 
 {% include "footer.njk" %}
 
-
-{% set js %}
-  {% include "js/cookieconsent.js" %}
-  {% include "js/tracking.js" %}
-  {% include "js/main.js" %}
-{% endset %}
-
-<script>{{ js | jsmin | safe }}</script>
+<script src="/main.js"></script>
 </body>
 </html>
