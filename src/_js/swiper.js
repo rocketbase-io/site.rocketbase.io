@@ -1,25 +1,17 @@
 import Swiper from 'swiper'
 
-var mySwiper = new Swiper('.swiper-container', {
-  // Optional parameters
+var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   spaceBetween: 30,
-  freeMode: true,
+  slidesPerGroup: 3,
   loop: true,
-
-  // If we need pagination
+  loopFillGroupWithBlank: true,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-})
+});
