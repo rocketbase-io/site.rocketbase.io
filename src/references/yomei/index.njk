@@ -20,7 +20,7 @@ ogImage: references.jpg
           <div class="container ">
             <div class="columns is-vcentered">
 
-              <div class="column is-7">
+              <div class="column is-5">
                 <div class="is-hidden-mobile">
                   <img src="/references/yomei/logo.svg" alt="rocketbase open source for comppanies">
                 </div>
@@ -31,8 +31,17 @@ ogImage: references.jpg
                   <p><a href="https://yomei.de" target="_blank">Besuchen</a></p>
                 </div>
               </div>
-              <div class="column is-5 is-hidden-mobile has-text-centered">
-                <img class="" src="/references/yomei/impressions/frontend-1.png" alt="yomei screenshop webshop">
+              <div class="column is-7">
+                <div class="swiper-container swiper-default">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-1.png" alt="rocketbase open source for comppanies"></div>
+                    <div class="swiper-slide"><img src="/references/yomei/impressions/backend-1.png" alt="rocketbase open source for comppanies"></div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -194,7 +203,7 @@ ogImage: references.jpg
     <h3>Impressionen</h3>
     <h2 class="title section-title">Einige Eindrücke des Projektes</h2>
     <!-- Slider main container -->
-    <div class="swiper-container">
+    <div class="swiper-container swiper-autoplay">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -212,10 +221,6 @@ ogImage: references.jpg
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-{#      <div class="swiper-button-prev"></div>#}
-{#      <div class="swiper-button-next"></div>#}
 
     </div>
   </div>

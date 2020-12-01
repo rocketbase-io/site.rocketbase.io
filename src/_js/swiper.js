@@ -3,7 +3,7 @@ import Swiper, { Pagination, Autoplay } from 'swiper';
 // configure Swiper to use modules
 Swiper.use([Pagination, Autoplay]);
 
-var swiper = new Swiper('.swiper-container', {
+var swiperAuto = new Swiper('.swiper-autoplay', {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -14,4 +14,18 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   }
+});
+
+var swiper = new new Swiper('.swiper-default', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
