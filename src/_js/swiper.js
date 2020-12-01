@@ -1,4 +1,7 @@
-import Swiper from 'swiper/bundle'
+import Swiper, { Pagination, Autoplay } from 'swiper';
+
+// configure Swiper to use modules
+Swiper.use([Pagination, Autoplay]);
 
 var swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
@@ -10,9 +13,5 @@ var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  }
 });
