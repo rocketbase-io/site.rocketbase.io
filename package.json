@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Static generator for company website",
   "scripts": {
-    "build": "npm run sass && uglify && eleventy",
+    "build": "npm run sass && npm run uglify && npx eleventy",
     "watch": "npm-run-all sass uglify watch:*",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
