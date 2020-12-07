@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
-  eleventyConfig.addPlugin(cacheBuster({}));
+  // eleventyConfig.addPlugin(cacheBuster({}));
 
   eleventyConfig.setDataDeepMerge(true);
 
