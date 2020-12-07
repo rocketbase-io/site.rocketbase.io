@@ -6,7 +6,6 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const htmlmin = require("html-minifier");
-const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 
 
 module.exports = function (eleventyConfig) {
@@ -18,7 +17,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
-  // eleventyConfig.addPlugin(cacheBuster({}));
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -38,6 +36,17 @@ module.exports = function (eleventyConfig) {
     // <a href="https://github.com/${username}/${repro}"><img src="/img/icons/github.svg" class="image is-24x24" alt="github - ${repro}"></a>
     // <img src="https://githubbadges.com/star.svg?user=${username}&repo=${repro}&style=flat&color=fff&background='" alt="star count">
     return `<iframe src="https://ghbtns.com/github-btn.html?user=${username}&amp;repo=${repro}&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>`;
+  });
+
+  let revision = "1";
+  try {
+    revision = require("child_process")
+      .execSync("git rev-parse HEAD")
+      .toString().trim();
+    revision = revision.substr(revision.length - 8);
+  } catch {}
+  eleventyConfig.addFilter("addRevision", function (value) {
+    return `${value}?v=${revision}`;
   });
 
 

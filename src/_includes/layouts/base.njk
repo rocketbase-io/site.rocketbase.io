@@ -12,8 +12,8 @@
   <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
   <meta property="og:image" content="{{ metadata.url }}/img/og-previews/{{ renderData.ogImage or ogImage or metadata.ogImage }}">
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-  <script src="{{ '/js/script.min.js' | url }}" async></script>
+  <link rel="stylesheet" href="{{ '/css/style.css' | url | addRevision }}">
+  <script src="{{ '/js/script.min.js' | url | addRevision }}" async></script>
   {% if embed %}{{ embed | safe }}{% endif %}
 </head>
 <body{% if templateClass %} class="{{ templateClass }}"{% endif %}>
