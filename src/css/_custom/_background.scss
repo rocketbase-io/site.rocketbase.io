@@ -12,6 +12,20 @@
   text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
 }
 
+.collaborative-background-image {
+  @media all and (max-width: 800px) {
+    background-image: url("/open-source/unsplash-collaboration.jpeg");
+  }
+  @media all and (min-width: 801px) {
+    background-image: url("/open-source/unsplash-collaboration.jpeg");
+  }
+  @media all and (min-width: 1201px) {
+    background-image: url("/open-source/unsplash-collaboration.jpeg");
+  }
+  background-size: cover;
+  text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+}
+
 .team-background-image {
   @media all and (max-width: 800px) {
     background-image: url("../img/background/team-800.jpg");
