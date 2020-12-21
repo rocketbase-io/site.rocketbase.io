@@ -16,7 +16,7 @@ var swiperAuto = new Swiper('.swiper-autoplay', {
   }
 });
 
-var swiper = new new Swiper('.swiper-default', {
+var swiper = new Swiper('.swiper-default', {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,

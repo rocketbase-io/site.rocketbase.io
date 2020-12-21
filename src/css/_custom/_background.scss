@@ -48,6 +48,10 @@
   margin: 80px 1.8vw 1.8vw 1.8vw;
 }
 
+.framed-margin-top {
+  margin: 80px 0;
+}
+
 .frame-1 {
   background-image: url("../img/background/frame-1.svg");
   background-size: 100% 100%;
@@ -63,10 +67,16 @@
 }
 
 .main-frame-wrapper {
+  height: 100%;
   position: relative;
   margin: -2px -2px -2px -2px;
 }
 
 .light-gray-bg {
   background-color: $light-grey;
+}
+
+.overflow-section {
+  background-color: white;
+  position: relative;
 }
