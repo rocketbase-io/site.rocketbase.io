@@ -15,17 +15,37 @@
     <div id="navbar-menu" class="navbar-menu">
 
       {{ collections.main | eleventyNavigation | eleventyNavigationToHtml({
-        listElement: "ul",
-        listItemElement: "li",
+        listElement: "div",
+        listItemElement: "div",
 
         listClass: "navbar-end",
         listItemClass: "navbar-item",
-        listItemHasChildrenClass: "dropdown",
         activeListItemClass: "active",
         activeKey: eleventyNavigation.key,
         showExcerpt: false
       }) | safe }}
 
-    </div>
+
+      <div class="navbar-item has-dropdown is-hoverable is-mega">
+        <div class="navbar-link">
+          <p class="navbar-title">Unternehmen</p>
+        </div>
+        <div class="navbar-dropdown">
+          <div class="navbar-dropdown-content">
+            {{ collections.company | eleventyNavigation | eleventyNavigationToHtml({
+              listElement: "div",
+              listItemElement: "div",
+
+              listClass: "nav-block",
+              listItemClass: "navbar-item",
+              activeListItemClass: "active",
+              activeKey: eleventyNavigation.key,
+              showExcerpt: false
+            }) | safe }}
+          </div>
+        </div>
+      </div>
+
+      </div>
   </div>
 </nav>
