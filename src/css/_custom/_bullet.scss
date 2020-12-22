@@ -1,6 +1,9 @@
 .timeline {
 
-  padding: 6% 0;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
   &::before{
     top: 0;
     bottom: 0;
@@ -8,7 +11,6 @@
     content: " ";
     width: 3px;
     background-color: #f5f5f5;
-    margin-left: -1.5px;
   }
 
   .timeline-row {
@@ -40,6 +42,20 @@
       content: " ";
       display: table;
       clear: both;
+    }
+
+    .timeline-panel-mobile {
+      width: 100%;
+      float: left;
+      border: 1px solid #d4d4d4;
+      border-radius: 2px;
+      padding: 4%;
+      position: relative;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      background-color: white;
+      text-align: left;
+
     }
 
     .timeline-panel {
