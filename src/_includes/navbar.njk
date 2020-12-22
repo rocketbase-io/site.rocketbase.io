@@ -14,17 +14,18 @@
 
     <div id="navbar-menu" class="navbar-menu">
 
-
       {{ collections.main | eleventyNavigation | eleventyNavigationToHtml({
-        listElement: "div",
-        listItemElement: "div",
+        listElement: "ul",
+        listItemElement: "li",
 
         listClass: "navbar-end",
         listItemClass: "navbar-item",
+        listItemHasChildrenClass: "dropdown",
         activeListItemClass: "active",
         activeKey: eleventyNavigation.key,
         showExcerpt: false
       }) | safe }}
+
     </div>
   </div>
 </nav>

@@ -36,14 +36,27 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-6">
+    <div class="columns">
+      <div class="column is-vcentered is-6">
         <img class="small-footer-logo" src="/img/logo-light.png" alt="">
         <p class="moto">made with ♥ in Hamburg &copy; 2020</p>
       </div>
       <div class="column">
         <h2>Seiten</h2>
         {{ collections.footer | eleventyNavigation | eleventyNavigationToHtml({
+          listElement: "ul",
+          listItemElement: "li",
+
+          listClass: "footer-nav",
+          listItemClass: "footer-nav-link",
+          activeListItemClass: "active",
+          activeKey: eleventyNavigation.key,
+          showExcerpt: false
+        }) | safe }}
+      </div>
+      <div class="column">
+        <h2>Unternehmen</h2>
+        {{ collections["footer_company"] | eleventyNavigation | eleventyNavigationToHtml({
           listElement: "ul",
           listItemElement: "li",
 
