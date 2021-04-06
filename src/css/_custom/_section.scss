@@ -6,7 +6,6 @@
   box-shadow: 0 5px 5px -5px #777;
   background-color: #fffffff5;
   position: fixed;
-  min-height: 4.5rem;
   top: 0;
   width: 100%;
 
@@ -191,6 +190,13 @@ figure.map {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transform: rotate(-2deg);
   margin: 1rem;
+}
+
+.project-details {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
 }
 
 .open-source-projects {

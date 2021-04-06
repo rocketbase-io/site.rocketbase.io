@@ -56,6 +56,52 @@
       background-color: white;
       text-align: left;
 
+      .bage-mobile {
+        height: 80px;
+        width: 80px;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        margin: 3% auto;
+        box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
+      }
+
+      .listen {
+        background: url(../how-we-work/listen.png) center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-color: #f2f2f2!important;
+      }
+
+      .ideas {
+        background: url(../how-we-work/ideas.png) center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-color: #f7f0d5!important;
+      }
+
+      .concept {
+        background: url(../how-we-work/concept.png) center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-color: #cff0fd!important;
+      }
+
+      .implementation {
+        background: url(../how-we-work/implementation.png) center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-color: #c0decb!important;
+      }
+
+      .hosting {
+        background: url(../how-we-work/hosting.png) center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-color: #dcb5bd!important;
+      }
+
     }
 
     .timeline-panel {
@@ -107,7 +153,6 @@
       left: 49%;
       margin-left: -25px;
       background-color: #999999;
-      z-index: 100;
       border-top-right-radius: 50%;
       border-top-left-radius: 50%;
       border-bottom-right-radius: 50%;

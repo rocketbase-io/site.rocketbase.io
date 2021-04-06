@@ -1,251 +1,309 @@
 ---
-layout: layouts/home.njk
+layout: layouts/base-fixed-hero.njk
 
 date: Last Modified
 tags:
-  - main
-  - footer
+- main
+- footer
 
 title: rocketbase.io - Referenzen - Yomei
 description: "Zufriedene Kunden sprechen für sich, heißt es. Unsere sprechen auch gern über uns, weil sie mit uns und ihrer Softwarelösung zufrieden sind."
 ogImage: references.jpg
 ---
 
-<section class="section">
-  <div class="hero framed-margin">
-    <div class="main-frame-wrapper">
-      <div class="frame-1">
-
-        <section class="section">
-          <div class="container ">
-            <div class="columns is-vcentered">
-
-              <div class="column is-5">
-                <div class="is-hidden-mobile">
-                  <img src="/references/yomei/logo.svg" alt="rocketbase open source for comppanies">
-                </div>
-                <h2 class="title section-title">Yomei Webshop & Backoffice</h2>
-                <div class="title-divider"></div>
-                <div class="content">
-                  <p>Ein komplettpaket vom Webdesign bis hin zu einer individuellen <br> Softwarelösung für die Produktpflege</p>
-                  <p><a href="https://yomei.de" target="_blank">Besuchen</a></p>
-                </div>
-              </div>
-              <div class="column is-7">
-                <div class="swiper-container swiper-default">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-1.png" alt="rocketbase open source for comppanies"></div>
-                    <div class="swiper-slide"><img src="/references/yomei/impressions/backend-1.png" alt="rocketbase open source for comppanies"></div>
-                  </div>
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
-                </div>
+<div class="hero hero-fullpage framed-margin-top">
+  <div class="main-frame-wrapper">
+    <section class="section" style="height: 100%">
+      <div class="container" style="height: 100%">
+        <div class="columns is-vcentered" style="height: 85%">
+          <div class="column is-12 is-4-tablet is-5-desktop">
+            <div>
+              <img src="/references/yomei/logo.svg" alt="rocketbase open source for comppanies">
+            </div>
+            <h2 class="title section-title">Yomei Webshop & Backoffice</h2>
+            <div class="title-divider is-hidden-mobile"></div>
+            <div class="content project-details">
+              <p>Das Komplettpaket vom <b>Webdesign</b> bis hin zu einer <b>individuellen Softwarelösung</b> für die
+                Produktpflege.</p>
+              <div class="project-spec is-hidden-mobile">
+                <hr/>
+                <dl class="dl-horizontal">
+                  <dt><b>Dauer</b></dt>
+                  <dd>4 Monate</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt><b>Branche</b></dt>
+                  <dd>Möbel Design & Herstellung</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt><b>Business</b></dt>
+                  <dd>B2C</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt><b>Rolle</b></dt>
+                  <dd>Architekt + Developer</dd>
+                </dl>
               </div>
             </div>
           </div>
-        </section>
-
+          <div class="column is-12 is-8-tablet is-7-desktop">
+            <div class="swiper-container swiper-default">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-1.png" alt="yomei-frontend">
+                </div>
+                <div class="swiper-slide"><img src="/references/yomei/impressions/backend-1.png" alt="yomei-backend">
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination" style="position: relative"></div>
+            </div>
+          </div>
+        </div>
+        <div style="position: fixed; bottom: 25px;" class="columns is-vcentered is-hidden-mobile">
+          <div class="column is-12">
+            <p>Technologien</p>
+            <hr style="margin: 1rem 0;">
+            <div class="tech-stack">
+              <a href="https://vaadin.com/" class="tech color-spring"><i class="tech-11ty"></i> 11ty</a>
+              <a href="https://vaadin.com/" class="tech color-vaadin"><i class="tech-vaadin"></i> Vaadin</a>
+              <a href="https://mariadb.org/" class="tech color-mariadb"><i class="tech-mariadb"></i> MariaDb</a>
+              <a href="https://projects.spring.io/spring-boot/" class="tech color-spring-boot"><i
+                  class="tech-spring-boot"></i> Spring-Boot</a>
+              <a href="https://kubernetes.io/" class="tech color-kubernetes"><i class="tech-kubernetes"></i> Kubernetes</a>
+              <a href="https://www.docker.com/" class="tech color-docker"><i class="tech-docker"></i> Docker</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
-</section>
+</div>
 
-<section class="section light-gray-bg is-medium">
-  <div class="container ">
-    <div class="columns is-vcentered">
+<div class="revealing-content overflow-section">
 
-      <div class="column is-6 is-hidden-mobile">
-        <img class="screenshot" src="/references/yomei/requirement.jpg" alt="rocketbase open source for comppanies">
-      </div>
-
-      <div class="column is-6">
-        <h3>Anforderungen</h3>
-        <h2 class="title section-title">Was war das Ziel?</h2>
-        <div class="title-divider"></div>
-        <div class="content">
-          <p>Mit einer stetig wachsenden Produktpalette und einem zunehmend weltweit vertreibenden Unternehmen wachsen
-            auch die Anforderungen an ein effizientes IT-System und an die optisch ansprechende Präsentation der Produkte.
-          </p>
-          <p>Für Yomei war das Gesamtpaket wichtig. So sollte es möglich sein zentral über ein Backoffice System
-            hochwertigen Content zu erzeugen. Diese Inhalte können Produkte mit aufwendigen Konfiguration sein, aber auch
-            FAQs, Downloads, Artikel und Geschichten bis hin zum vertreibenden Händler.
-          </p>
+  <section class="section is-small" style="box-shadow: 0px 10px 5px #888, 0px 0px 2px #d4d4d4">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <h3>Das Project</h3>
+          <h2 class="title section-title">Eine kurze Case-Study</h2>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="section light-gray-bg is-medium">
 
-<section class="section is-hidden-mobile">
-  <div class="container has-text-centered">
-    <div class="columns is-vcentered">
-      <div class="column">
-        <h3>Das Vorgehen</h3>
-        <h2 class="title section-title">Wie ist das Projekt abgelaufen?</h2>
+    <div class="container ">
+      <div class="columns is-vcentered">
+
+        <div class="column is-6 is-hidden-mobile">
+          <img class="screenshot" src="/references/yomei/requirement.jpg" alt="rocketbase open source for comppanies">
+        </div>
+
+        <div class="column is-6">
+          <h3>Die Anforderungen</h3>
+          <h2 class="title section-title">Was war das Ziel?</h2>
+          <div class="title-divider"></div>
+          <div class="content">
+            <p>Mit einer stetig wachsenden Produktpalette und einem zunehmend weltweit vertreibenden Unternehmen wachsen
+              auch die Anforderungen an ein effizientes IT-System und an die optisch ansprechende Präsentation der
+              Produkte.
+            </p>
+            <p>Für Yomei war das Gesamtpaket wichtig. So sollte es möglich sein, zentral über ein Backoffice System
+              hochwertigen Content zu erzeugen. Diese Inhalte können Produkte mit aufwendigen Konfiguration sein, aber
+              auch FAQs, Downloads, Artikel und Vertriebspartner.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="content">
-      <div class="container">
-        <p>Jedes Projekt hat seinen ganz eigenen Charakter. Im folgenden soll der Ablauf in der Zusammenarbeit mit
-          Yomei kurz aufgezeigt werden</p>
+  <section class="section is-hidden-mobile">
+    <div class="container has-text-centered">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <h3>Das Vorgehen</h3>
+          <h2 class="title section-title">Wie ist das Projekt abgelaufen?</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="container">
+          <p>Jedes Projekt hat seinen ganz eigenen Charakter. Im folgenden soll der Ablauf in der Zusammenarbeit mit
+            <b>Yomei</b> kurz aufgezeigt werden</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section is-hidden-mobile">
-  <div class="container has-text-centered">
-    <div class="content">
-      <div class="container">
-        <ul class="timeline" style="list-style: none;">
-          <li class="timeline-row">
-            <div class="timeline-badge first" data-aos="fade-up" data-aos-anchor-placement="top-center">
-              <img src="/how-we-work/horen-sie-aktiv-zu.png">
-            </div>
-            <div class="timeline-panel" data-aos="fade-right" data-aos-anchor-placement="top-center">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Zuhören</h4>
-                <p><small class="text-muted"><i class=""></i></small></p>
+  <section class="section is-hidden-mobile">
+    <div class="container has-text-centered">
+      <div class="content">
+        <div class="container">
+          <ul class="timeline" style="list-style: none;">
+            <li class="timeline-row">
+              <div class="timeline-badge first" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <img src="/how-we-work/horen-sie-aktiv-zu.png">
               </div>
-              <div class="timeline-body">
-                <p><i>Zunächst ging es um die Vorstellungen von Yomei.</i></p>
-                <p>Uns war wichtig zunächst einen Eindruck von den
-                  Erwartungen und Vorstellungen von Yomei zu erhalten. Welche Anforderungen hat Yomei an eine
-                  individuelle Softwarelösung.</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-row timeline-inverted">
-            <div class="timeline-badge second" data-aos="fade-up" data-aos-anchor-placement="top-center">
-              <img src="/how-we-work/projektmanagement.png">
-            </div>
-            <div class="timeline-panel" data-aos="fade-left" data-aos-anchor-placement="top-center">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Ideen & Planung</h4>
-              </div>
-              <div class="timeline-body">
-                <p><i>Nun, nachdem wir Yomei und seine Anforderungen kennengelernt haben, ging es für uns darum Ideen
-                    und Lösungen zu finden.</i></p>
-                <p>Wichtig bei der Ausarbeitung von Lösungen war, wie in
-                  jedem Projekt, die Bedürfnisse von Yomei im Blick zu behalten, aber ebenso beratend und unterstützend
-                  einzuwirken und gegebenenfalls Alternativen aufzuzeigen.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-row">
-            <div class="timeline-badge third" data-aos="fade-up" data-aos-anchor-placement="top-center">
-              <img src="/how-we-work/konzept.png">
-            </div>
-            <div class="timeline-panel" data-aos="fade-right" data-aos-anchor-placement="top-center">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Konzeption</h4>
-              </div>
-              <div class="timeline-body">
-                <p><i>Ideen und Planung fließen in ein Gesamtkonzept</i></p>
-                <p> Das Konzept verpackt alle Ideen und Aspekte der Planung in einen Gesamtplan. Dieser gibt zum einen
-                  vor wie das Projekt ablaufen wird, aber ebenso mit welchen Techniken das Projekt umgesetzt wird.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-row timeline-inverted">
-            <div class="timeline-badge fourth" data-aos="fade-up" data-aos-anchor-placement="top-center">
-              <img src="/how-we-work/implementierer.png">
-            </div>
-            <div class="timeline-panel" data-aos="fade-left" data-aos-anchor-placement="top-center">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Umsetzung & Implementierung</h4>
-              </div>
-              <div class="timeline-body">
-                <p><i>Das Konzept ist klar. Es kann losgehen.</i></p>
-                <p>Nun ging es darum das Konzept umzusetzen. Ein Kernaspekt für ein erfolgreiches Projekt ist dabei
-                das direkte Feedback des Kunden. Zu jeder Zeit bestand die Möglichkeit Funktionalitäten auf einer eigenen
-                Testumgebung zu validieren.</p>
-
-                <p><b><i>Eingesetzte Technologien:</i></b></p>
-                <div class="tech-stack">
-                  <a href="https://vaadin.com/" class="tech color-spring"><i class="tech-11ty"></i> 11ty</a>
-                  <a href="https://vaadin.com/" class="tech color-vaadin"><i class="tech-vaadin"></i> Vaadin</a>
-                  <a href="https://mariadb.org/" class="tech color-mariadb"><i class="tech-mariadb"></i> MariaDb</a>
-                  <a href="https://projects.spring.io/spring-boot/" class="tech color-spring-boot"><i class="tech-spring-boot"></i> Spring-Boot</a>
+              <div class="timeline-panel" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Zuhören</h4>
+                  <p><small class="text-muted"><i class=""></i></small></p>
                 </div>
-
-              </div>
-            </div>
-          </li>
-          <li class="timeline-row">
-            <div class="timeline-badge fith" data-aos="fade-up" data-aos-anchor-placement="top-center">
-              <img src="/how-we-work/hosting.png">
-            </div>
-            <div class="timeline-panel" data-aos="fade-right" data-aos-anchor-placement="top-center">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Betrieb & Hosting</h4>
-              </div>
-              <div class="timeline-body">
-                <p><i>Zuletzt hat rocketbase-io die Auslieferung und den Einsatz der für Yomei individuellen Software
-                    geplant und durchgeführt.</i></p>
-                <p>Der Betrieb und die Auslieferung wurden hierbei bereits im Konzept genau geplant. Nach Abnahme der
-                  Anwendung von Yomei haben wir damit begonnen das Softwaresystem <b>Live</b> zu stellen.</p>
-                <p><b><i>Eingesetzte Technologien:</i></b></p>
-                <div class="tech-stack">
-                  <a href="https://kubernetes.io/" class="tech color-kubernetes"><i class="tech-kubernetes"></i> Kubernetes</a>
-                  <a href="https://www.docker.com/" class="tech color-docker"><i class="tech-docker"></i> Docker</a>
+                <div class="timeline-body">
+                  <p><i>Zunächst ging es um die Vorstellungen von Yomei.</i></p>
+                  <p>Uns war wichtig zunächst einen Eindruck von den
+                    Erwartungen und Vorstellungen von Yomei zu erhalten. Welche Anforderungen hat Yomei an eine
+                    individuelle Softwarelösung.</p>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="timeline-row timeline-inverted">
+              <div class="timeline-badge second" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <img src="/how-we-work/projektmanagement.png">
+              </div>
+              <div class="timeline-panel" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Ideen & Planung</h4>
+                </div>
+                <div class="timeline-body">
+                  <p><i>Nun, nachdem wir Yomei und seine Anforderungen kennengelernt haben, ging es für uns darum Ideen
+                      und Lösungen zu finden.</i></p>
+                  <p>Wichtig bei der Ausarbeitung von Lösungen war, wie in
+                    jedem Projekt, die Bedürfnisse von Yomei im Blick zu behalten, aber ebenso beratend und
+                    unterstützend
+                    einzuwirken und gegebenenfalls Alternativen aufzuzeigen.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-row">
+              <div class="timeline-badge third" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <img src="/how-we-work/konzept.png">
+              </div>
+              <div class="timeline-panel" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Konzeption</h4>
+                </div>
+                <div class="timeline-body">
+                  <p><i>Ideen und Planung fließen in ein Gesamtkonzept</i></p>
+                  <p> Das Konzept verpackt alle Ideen und Aspekte der Planung in einen Gesamtplan. Dieser gibt zum einen
+                    vor wie das Projekt ablaufen wird, aber ebenso mit welchen Techniken das Projekt umgesetzt wird.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-row timeline-inverted">
+              <div class="timeline-badge fourth" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <img src="/how-we-work/implementierer.png">
+              </div>
+              <div class="timeline-panel" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Umsetzung & Implementierung</h4>
+                </div>
+                <div class="timeline-body">
+                  <p><i>Das Konzept ist klar. Es kann losgehen.</i></p>
+                  <p>Nun ging es darum das Konzept umzusetzen. Ein Kernaspekt für ein erfolgreiches Projekt ist dabei
+                    das direkte Feedback des Kunden. Zu jeder Zeit bestand die Möglichkeit Funktionalitäten auf einer
+                    eigenen
+                    Testumgebung zu validieren.</p>
+
+                  <p><b><i>Eingesetzte Technologien:</i></b></p>
+                  <div class="tech-stack">
+                    <a href="https://vaadin.com/" class="tech color-spring"><i class="tech-11ty"></i> 11ty</a>
+                    <a href="https://vaadin.com/" class="tech color-vaadin"><i class="tech-vaadin"></i> Vaadin</a>
+                    <a href="https://mariadb.org/" class="tech color-mariadb"><i class="tech-mariadb"></i> MariaDb</a>
+                    <a href="https://projects.spring.io/spring-boot/" class="tech color-spring-boot"><i
+                        class="tech-spring-boot"></i> Spring-Boot</a>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li class="timeline-row">
+              <div class="timeline-badge fith" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <img src="/how-we-work/hosting.png">
+              </div>
+              <div class="timeline-panel" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Betrieb & Hosting</h4>
+                </div>
+                <div class="timeline-body">
+                  <p><i>Zuletzt hat rocketbase-io die Auslieferung und den Einsatz der für Yomei individuellen Software
+                      geplant und durchgeführt.</i></p>
+                  <p>Der Betrieb und die Auslieferung wurden hierbei bereits im Konzept genau geplant. Nach Abnahme der
+                    Anwendung von Yomei haben wir damit begonnen das Softwaresystem <b>Live</b> zu stellen.</p>
+                  <p><b><i>Eingesetzte Technologien:</i></b></p>
+                  <div class="tech-stack">
+                    <a href="https://kubernetes.io/" class="tech color-kubernetes"><i class="tech-kubernetes"></i>
+                      Kubernetes</a>
+                    <a href="https://www.docker.com/" class="tech color-docker"><i class="tech-docker"></i> Docker</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section light-gray-bg">
-  <div class="container has-text-centered">
-    <h3>Impressionen</h3>
-    <h2 class="title section-title">Einige Eindrücke des Projektes</h2>
-    <!-- Slider main container -->
-    <div class="swiper-container swiper-autoplay">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-1.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-2.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-3.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-4.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-5.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-6.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-7.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-8.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/backend-2.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/backend-1.png" alt="rocketbase open source for comppanies"></div>
-        <div class="swiper-slide"><img src="/references/yomei/impressions/backend-3.png" alt="rocketbase open source for comppanies"></div>
+  <section class="section light-gray-bg">
+    <div class="container has-text-centered">
+      <h3>Impressionen</h3>
+      <h2 class="title section-title">Einige Eindrücke des Projektes</h2>
+      <!-- Slider main container -->
+      <div class="swiper-container swiper-autoplay">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-1.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-2.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-3.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-4.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-5.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-6.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-7.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/frontend-8.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/backend-2.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/backend-1.png"
+                                         alt="rocketbase open source for comppanies"></div>
+          <div class="swiper-slide"><img src="/references/yomei/impressions/backend-3.png"
+                                         alt="rocketbase open source for comppanies"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-variable is-7">
-      <div class="column content has-text-centered">
-        <h2>Das Ergebnis</h2>
-        <p>Yomei hat ein auf seine Bedürfnisse abgestimmtes Komplettpaket erhalten. Mit diesem System ist es
-          Yomei nun möglich ihre Produkte, Vertriebspartner und weitere Inhalte zu pflegen.</p>
-        <p>Dabei entscheidet <b>Yomei</b> selbst, wann
-          diese Live auf der Webseite released werden. Neben dem umgesetzten Produkt kümmert sich <b>rocketbase-io</b>
-          um die Pflege der Datenbanken und das betreiben des Backoffice System.
-        </p>
-      </div>
-      <div class="column content has-text-centered">
-        <h2>Das sagt der Kunde</h2>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-variable is-7">
+        <div class="column content has-text-centered">
+          <h2>Das Ergebnis</h2>
+          <p>Yomei hat ein auf seine Bedürfnisse abgestimmtes Komplettpaket erhalten. Mit diesem System ist es
+            Yomei nun möglich ihre Produkte, Vertriebspartner und weitere Inhalte zu pflegen.</p>
+          <p>Dabei entscheidet <b>Yomei</b> selbst, wann
+            diese Live auf der Webseite released werden. Neben dem umgesetzten Produkt kümmert sich <b>rocketbase-io</b>
+            um die Pflege der Datenbanken und das betreiben des Backoffice System.
+          </p>
+        </div>
+        <div class="column content has-text-centered">
+          <h2>Das sagt der Kunde</h2>
           <blockquote>
             <div class="has-text-centered">
               <img src="/references/yomei/logo.svg" alt="rocketbase open source for comppanies">
@@ -254,35 +312,53 @@ ogImage: references.jpg
                 unserer Start-Up-Zeit gelotst. Dadurch können wir unser Geschäft jetzt jederzeit skalieren.”</i></p>
           </blockquote>
           <p><cite>Roman Schneider · YOMEI GmbH</cite></p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="hero concrete-white-background-image">
-  <div class="main-frame-wrapper">
-    <div class="frame-2">
+  <div class="hero concrete-white-background-image">
+    <div class="main-frame-wrapper">
+      <div class="frame-2">
 
-      <div class="hero-body is-clean">
-        <div class="container has-text-centered padding-bottom">
+        <div class="hero-body is-clean">
+          <div class="container has-text-centered padding-bottom">
 
-          <div class="columns is-vcentered">
-            <div class="column is-12">
-              <h3>Weitere Projekte</h3>
-              <h2 class="title section-title">Schauen Sie sich alle unsere Projekte and</h2>
-              <div class="content">
-                <div class="tech-stack">
-                  <a href="http://rocketbase.io/references/" class="tech color-github"><i class="tech-github"></i>
-                    Referenzen</a>
-                  <a href="https://github.com/rocketbase-io/" target="_blank" class="tech color-github"><i class="tech-github"></i>
-                    Github</a>
+            <div class="columns is-vcentered">
+              <div class="column is-12">
+                <h3>Weitere Projekte</h3>
+                <h2 class="title section-title">Schauen Sie sich alle unsere Projekte and</h2>
+                <div class="content">
+                  <div class="tech-stack">
+                    <a href="http://rocketbase.io/references/" class="tech color-github"><i class="tech-github"></i>
+                      Referenzen</a>
+                    <a href="https://github.com/rocketbase-io/" target="_blank" class="tech color-github"><i
+                        class="tech-github"></i>
+                      Github</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </div>
   </div>
+  {% include "footer.njk" %}
 </div>
+
+<script>
+
+  const heroFullpage = document.getElementsByClassName('hero-fullpage')[0];
+  const revealingHero = document.getElementsByClassName('revealing-content')[0];
+
+  revealingHero.style.top = (heroFullpage.offsetHeight) + 'px';
+
+  document.addEventListener('scroll', function () {
+    const overflowSection = document.querySelector('.overflow-section');
+    let opacity = (overflowSection.getBoundingClientRect().top) / heroFullpage.offsetHeight;
+    heroFullpage.style.opacity = opacity;
+  });
+
+</script>
