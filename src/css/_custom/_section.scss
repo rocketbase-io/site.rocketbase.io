@@ -2,6 +2,10 @@
   padding-bottom: 40px;
 }
 
+.content-entry {
+  box-shadow: 0 -5px 5px -5px #cecece;
+}
+
 .navbar {
   box-shadow: 0 5px 5px -5px #777;
   background-color: #fffffff5;
@@ -31,12 +35,24 @@
   }
 }
 
-.container-full-height{
+
+
+section.ref-title-section {
   height: 100%;
 
-  .columns{
+  .container-full-height{
     height: 100%;
+
+    .columns {
+      height: 85%;
+    }
   }
+
+}
+
+.technologie-section{
+  position: fixed;
+  bottom: 25px;
 }
 
 .section, .hero {
