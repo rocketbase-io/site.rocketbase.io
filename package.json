@@ -3,10 +3,10 @@
   "version": "2.0.0",
   "description": "Static generator for company website",
   "scripts": {
-    "build": "npx eleventy",
+    "build": "npx eleventy && npm run build:js",
     "watch": "npx eleventy --watch",
     "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy",
+    "debug": "DEBUG=* eleventy && npm run build:js",
     "build:js": "rollup -c"
   },
   "repository": {

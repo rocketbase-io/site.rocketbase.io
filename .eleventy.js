@@ -11,12 +11,6 @@ const { exec } = require("child_process");
 
 module.exports = function(eleventyConfig) {
 
-  // eleventyConfig.on('afterBuild', () => {
-  //   exec("npm run build:js");
-  // });
-
-  exec("npm run build:js");
-
   // Copy `img/` + `fonts/` to `_site/img`
   eleventyConfig.addPassthroughCopy("src/fonts");
 
