@@ -14,6 +14,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
   <link rel="stylesheet" href="{{ '/css/style.css' | url | addRevision }}">
   <script src="{{ '/js/script.min.js' | url | addRevision }}" async></script>
+  <script defer data-domain="rocketbase.io" src="https://plausible.io/js/plausible.js"></script>
   {% if embed %}{{ embed | safe }}{% endif %}
 </head>
 <body{% if templateClass %} class="{{ templateClass }}"{% endif %}>

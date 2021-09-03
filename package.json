@@ -8,7 +8,7 @@
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "sass": "sass --style=compressed src/css/style.scss src/css/style.css",
-    "uglify": "uglifyjs src/js/cookieconsent.js src/js/tracking.js src/js/main.js --compress --mangle -o src/js/script.min.js"
+    "uglify": "uglifyjs src/js/main.js --compress --mangle -o src/js/script.min.js"
   },
   "repository": {
     "type": "git",
