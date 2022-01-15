@@ -1,0 +1,75 @@
+{% if (withContact == null or withContact) %}
+<section class="section contact">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="media">
+          <div class="media-left is-hidden-mobile">
+            <img src="/img/from-hamburg.svg" alt="from hamburg" class="from-hamburg">
+          </div>
+          <div class="media-content">
+            <h3>rocketbase HQ:</h3>
+            <p>Unser schönes Büro in der Hamburg Altstadt, einen Katzensprung entfernt von der HafenCity. Dort arbeiten, treffen und workshopen wir. Komm gerne vorbei wenn du in der Gegend bist.</p>
+            <p>Aufgrund der aktuellen Sitation sag uns bitte vorher Bescheid, wenn du uns besuchen willst.</p>
+            <p>
+              rocketbase.io software productions GmbH<br>
+              Katharinenstraße 30a<br>
+              20457 Hamburg<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-6">
+        <img class="small-footer-logo" src="/img/logo-light.png" alt="">
+        <p class="moto">made with ♥ in Hamburg &copy; 2021</p>
+      </div>
+      <div class="column">
+        <h2>Seiten</h2>
+        {{ collections.footer | eleventyNavigation | eleventyNavigationToHtml({
+          listElement: "ul",
+          listItemElement: "li",
+
+          listClass: "footer-nav",
+          listItemClass: "footer-nav-link",
+          activeListItemClass: "active",
+          activeKey: eleventyNavigation.key,
+          showExcerpt: false
+        }) | safe }}
+      </div>
+      <div class="column">
+        <h2>Profile</h2>
+        <ul>
+          <li><a href="https://github.com/rocketbase-io">Github</a></li>
+          <li><a href="https://hub.docker.com/r/rocketbaseio/">Docker-Hub</a></li>
+          <li><a href="https://www.npmjs.com/~rocketbase-io">npmjs.com</a></li>
+          <li><a href="https://www.xing.com/companies/rocketbase.iosoftwareproductionsgmbh">Xing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <ul class="display-inline">
+          <li><a href="/imprint/">Impressum</a></li>
+          <li><a href="/privacy/">Datenschutzbestimmungen</a></li>
+        </ul>
+      </div>
+      <div class="column is-narrow has-text-right">
+        <ul class="display-inline">
+          <li><a href="https://www.xing.com/companies/rocketbase.iosoftwareproductionsgmbh"><img
+                src="/img/icons/xing.svg" class="image is-32x32"></a></li>
+          <li><a href="https://github.com/rocketbase-io"><img src="/img/icons/github.svg" class="image is-32x32"></a>
+          </li>
+          <li><a href="mailto:info@rocketbase.io"><img src="/img/icons/email.svg" class="image is-32x32"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

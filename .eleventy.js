@@ -1,105 +1,60 @@
-const {DateTime} = require("luxon");
 const fs = require("fs");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const htmlmin = require("html-minifier");
+const Image = require("@11ty/eleventy-img");
 
+async function imageShortcode(src, alt, sizes) {
+  let metadata = await Image(src, {
+    widths: [300, 600],
+    formats: ["avif", "jpeg"]
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function (eleventyConfig) {
 
   // Copy `img/` + `fonts/` to `_site/img`
   eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/**/*.(svg|png|jpg)");
 
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addNunjucksGlobal("year", new Date().getFullYear());
+  eleventyConfig.addNunjucksGlobal("timestamp", Date.now());
+  eleventyConfig.addPairedShortcode("image", imageShortcode);
 
-  eleventyConfig.addLayoutAlias("post", "src/layouts/post.njk");
-  eleventyConfig.addLayoutAlias("project", "src/layouts/project.njk");
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+  eleventyConfig.addPairedShortcode("headerSection", (content, title, image) => {
+    return `<section>
+  <h1>${title}</h1>
+  <img src="${image}" />
+  <div>${content}</div>
+</section>`;
   });
 
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-  });
+  eleventyConfig.addPassthroughCopy("docs");
 
-  eleventyConfig.addNunjucksShortcode("githubStars", function (username, repro) {
-    // <a href="https://github.com/${username}/${repro}"><img src="/img/icons/github.svg" class="image is-24x24" alt="github - ${repro}"></a>
-    // <img src="https://githubbadges.com/star.svg?user=${username}&repo=${repro}&style=flat&color=fff&background='" alt="star count">
-    return `<iframe src="https://ghbtns.com/github-btn.html?user=${username}&amp;repo=${repro}&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>`;
-  });
-
-  let revision = "1";
-  try {
-    revision = require("child_process")
-      .execSync("git rev-parse HEAD")
-      .toString().trim();
-    revision = revision.substr(revision.length - 8);
-  } catch {}
-  eleventyConfig.addFilter("addRevision", function (value) {
-    return `${value}?v=${revision}`;
-  });
-
-
-  // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter("head", (array, n) => {
-    if (n < 0) {
-      return array.slice(n);
-    }
-
-    return array.slice(0, n);
-  });
-
-  eleventyConfig.addPassthroughCopy("src/**/*.jpg");
-  eleventyConfig.addPassthroughCopy("src/**/*.ico");
-  eleventyConfig.addPassthroughCopy("src/**/*.png");
-  eleventyConfig.addPassthroughCopy("src/**/*.pdf");
-  eleventyConfig.addPassthroughCopy("src/**/*.svg");
-  eleventyConfig.addPassthroughCopy("src/css/*.css");
-  eleventyConfig.addPassthroughCopy("src/js/*.min.js");
-
-  /* Markdown Overrides */
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
-  });
-  eleventyConfig.setLibrary("md", markdownLibrary);
-
-  // minify html
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    if (outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true
-      });
-      return minified;
-    }
-    return content;
-  });
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     ui: false,
     port: 5555,
     callbacks: {
-      ready: function (err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404/index.html');
+      ready: function(err, bs) {
 
-        browserSync.addMiddleware("*", (req, res) => {
+        bs.addMiddleware("*", (req, res) => {
+          const content_404 = fs.readFileSync('_site/404.html');
+          // Add 404 http status code in request header.
+          res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
           // Provides the 404 content without redirect.
           res.write(content_404);
           res.end();
@@ -109,29 +64,8 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: [
-      "md",
-      "njk",
-      "html",
-      "liquid"
-    ],
-
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about those.
-
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // You can also pass this in on the command line using `--pathprefix`
-
-    // pathPrefix: "/",
-
-    markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
-
-    // These are all optional, defaults are shown:
     dir: {
-      input: "./src/",
+      input: "src",
       includes: "_includes",
       data: "_data",
       output: "_site"
