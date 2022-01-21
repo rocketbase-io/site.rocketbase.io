@@ -2,12 +2,48 @@
   padding-bottom: 40px;
 }
 
+.navbar-brand {
+  .navbar-item {
+    img {
+      max-height: 2.7rem;
+
+      @media screen and (max-width: 1023px) {
+        max-height: 2.2rem;
+      }
+      @media screen and (max-width: 769px) {
+        max-height: 2rem;
+      }
+
+      &.shadow {
+        -webkit-filter: drop-shadow(0 0 10px #373754) drop-shadow(0 0 10px #373754) drop-shadow(0 0 10px #373754);
+        filter: drop-shadow(0 0 10px #373754) drop-shadow(0 0 10px #373754) drop-shadow(0 0 10px #373754);
+      }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+
+  .wave {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
 .navbar {
   background: transparent;
   min-height: 4.5rem;
   position: absolute;
   top: 0;
   width: 100%;
+  padding: 0 1.5rem;
+
+  @media screen and (max-width: 1023px) {
+    padding: 0 0;
+  }
 
   &-menu {
     .navbar-item {
@@ -16,14 +52,36 @@
 
         &:hover {
           background-color: transparent;
-          color: $primary;
+          color: $coral;
         }
       }
 
       &.active {
         a {
-          color: $grey-3;
+          color: $coral;
           text-decoration: underline;
+        }
+      }
+    }
+    &.has-text-white {
+
+      .navbar-item {
+        a {
+          color: $white;
+
+          text-shadow: $night-blue 0px 0px 5px, $night-blue 0px 0px 10px, $night-blue 0px 0px 15px, $night-blue 0px 0px 20px, $night-blue 0px 0px 30px, $night-blue 0px 0px 40px, $night-blue 0px 0px 75px;
+
+          &:hover {
+            color: white;
+            text-shadow: $black 0px 0px 5px, $black 0px 0px 10px, $white 0px 0px 15px, $white 0px 0px 20px, $white 0px 0px 30px, $white 0px 0px 40px, $white 0px 0px 75px;
+          }
+        }
+
+        &.active {
+          a {
+            color: $white;
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -32,9 +90,11 @@
 }
 
 .section, .hero {
-  h3 {
+  .handwritten {
     font-family: $family-hand-written;
     font-size: 1.5em;
+    margin: 0;
+    padding: 0;
   }
 
   .card, figure {

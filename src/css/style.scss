@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,600|Gloria+Hallelujah&display=swap');
-
-$family-sans-serif: 'Barlow', sans-serif;
+$family-sans-serif: 'MohrAlt-Light', sans-serif;
 $body-font-size: 1.2em !default;
-$family-hand-written: 'Gloria Hallelujah', cursive;
+$family-hand-written: 'DeliveryNote-Regular', cursive;
 
 @import "colors";
 
 @import "../../node_modules/bulma/bulma";
-//@import "_dependency/cookieconsent";
 
 @import "_custom/background";
 @import "_custom/section";

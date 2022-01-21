@@ -46,6 +46,10 @@
 
 .framed-margin {
   margin: 80px 1.8vw 1.8vw 1.8vw;
+
+  @media screen and (max-width: 1023px) {
+    margin: 60px 1.8vw 1.8vw 1.8vw;
+  }
 }
 
 .frame-1 {

@@ -20,17 +20,17 @@
     "url": "https://www.rocketbase.io"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
     "bulma": "^0.9.3",
     "html-minifier": "^4.0.0",
-    "luxon": "^2.0.2",
-    "markdown-it": "^12.2.0",
+    "luxon": "^2.3.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.43.3",
-    "uglify-js": "^3.14.2"
+    "sass": "^1.49.0",
+    "uglify-js": "^3.14.5"
   }
 }
