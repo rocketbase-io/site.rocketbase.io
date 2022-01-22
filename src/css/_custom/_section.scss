@@ -63,6 +63,7 @@
         }
       }
     }
+
     &.has-text-white {
 
       .navbar-item {
@@ -86,6 +87,24 @@
       }
     }
 
+  }
+}
+
+.reverse-columns {
+  &.columns {
+    @include until($tablet) {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+  }
+}
+
+.customer-logo {
+  img {
+    filter: grayscale(100%);
+    &:hover {
+      filter: none;
+    }
   }
 }
 

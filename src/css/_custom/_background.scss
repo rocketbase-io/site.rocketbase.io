@@ -10,6 +10,9 @@
   }
   background-size: cover;
   text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+  .button {
+    text-shadow: none;
+  }
 }
 
 .team-background-image {
@@ -26,6 +29,9 @@
   }
   background-size: cover;
   text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+  .button {
+    text-shadow: none;
+  }
 }
 
 .work-desk-background-image {
@@ -42,6 +48,9 @@
   background-position: bottom center;
   background-size: cover;
   text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+  .button {
+    text-shadow: none;
+  }
 }
 
 .framed-margin {
