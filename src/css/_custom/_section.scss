@@ -31,6 +31,22 @@
     position: absolute;
     bottom: 0;
   }
+
+  h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.hero, section {
+  p {
+    margin-bottom: 0.5em;
+    &.handwritten {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .navbar {
@@ -114,28 +130,6 @@
     font-size: 1.5em;
     margin: 0;
     padding: 0;
-  }
-
-  .card, figure {
-    h3 {
-      font-size: 1.3em;
-    }
-  }
-
-  .legal-text {
-    h3 {
-      font-family: $family-sans-serif;
-      font-size: 1.5em;
-      margin: 0.75em 0;
-    }
-
-    h2 {
-      margin: 1em 0 0.75em 0;
-    }
-
-    p {
-      margin-bottom: 0.4em;
-    }
   }
 
   .title-divider {
@@ -268,11 +262,8 @@ figure.map {
 
   .content {
     padding: 1em 1em 0.2em 1em;
+    padding: 1em 1em 0.2em 1em;
 
-    h2 {
-      font-weight: 600;
-      font-size: 1.1em;
-    }
   }
 
   .badges {
