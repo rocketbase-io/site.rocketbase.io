@@ -22,7 +22,8 @@
   }
 }
 
-.hero {
+.hero, section {
+
   position: relative;
 
   .wave {
@@ -38,15 +39,14 @@
     margin-top: 1em;
     margin-bottom: 0.5em;
   }
-}
 
-.hero, section {
   p {
     margin-bottom: 0.5em;
     &.handwritten {
       margin-bottom: 0;
     }
   }
+
 }
 
 .navbar {
@@ -115,6 +115,13 @@
   }
 }
 
+.tile {
+  h3 {
+    font-size: 28px;
+    font-family: $family-hand-written;
+  }
+}
+
 .customer-logo {
   img {
     filter: grayscale(100%);
@@ -133,8 +140,8 @@
   }
 
   .title-divider {
-    margin: 10px 0;
-    width: 80px;
+    margin: 0.5rem 0 1.5rem 0;
+    width: 8rem;
     height: 5px;
     background: $grey-3;
 
@@ -278,4 +285,17 @@ figure.map {
 
 .extra-margin-bottom {
   margin-bottom: 20px;
+}
+
+.legal-text {
+  h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+  }
 }

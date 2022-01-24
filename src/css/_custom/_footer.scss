@@ -12,12 +12,12 @@ footer.footer {
 
     &:hover {
       color: $smoke-white;
-      border-bottom: 2px solid $white;
+      text-decoration: underline;
     }
 
     &.is-active {
       color: $primary;
-      border-bottom: 2px solid $primary;
+      text-decoration: underline;
     }
   }
 
