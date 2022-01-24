@@ -3,7 +3,7 @@
     <a class="navbar-item" href="/">
       <img src="/img/logo-{% if navLight %}light{% else %}dark{% endif %}.png" {% if navLight %}class="shadow"{% endif %} alt="RocketBase Logo">
     </a>
-    <span role="button" tabindex="0" class="navbar-burger burger" data-target="navbar-menu">
+    <span role="button" tabindex="0" class="navbar-burger burger{% if navLight %} has-text-white{% endif %}" data-target="navbar-menu">
           <span></span>
           <span></span>
           <span></span>
