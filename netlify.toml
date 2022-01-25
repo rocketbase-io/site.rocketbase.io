@@ -1,24 +1,23 @@
 [build]
   publish = "_site"
   command = "npm run build"
+
 [[redirects]]
+  from = "/services"
+  to = "/leistungen"
+  status = 301
 
-  [redirects.404]
-    from = "/*"
-    to = "/404/"
-    status = 404
+[[redirects]]
+  from = "/references"
+  to = "/referenzen"
+  status = 301
 
-  [redirects.services]
-    from = "/services"
-    to = "/leistungen"
-    status = 302
+[[redirects]]
+  from = "/about"
+  to = "/ueber-uns"
+  status = 301
 
-  [redirects.references]
-    from = "/references"
-    to = "/referenzen"
-    status = 302
-
-  [redirects.about]
-    from = "/about"
-    to = "/ueber-uns"
-    status = 302
+[[redirects]]
+  from = "/*"
+  to = "/404/"
+  status = 404
