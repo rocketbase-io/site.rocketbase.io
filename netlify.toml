@@ -5,3 +5,15 @@
   from = "/*"
   to = "/404/"
   status = 404
+[[redirects]]
+  from = "/services"
+  to = "/leistungen"
+  status = 302
+[[redirects]]
+  from = "/references"
+  to = "/referenzen"
+  status = 302
+[[redirects]]
+  from = "/about"
+  to = "/ueber-uns"
+  status = 302

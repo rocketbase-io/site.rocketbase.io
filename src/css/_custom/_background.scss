@@ -10,6 +10,9 @@
   }
   background-size: cover;
   text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+  .button {
+    text-shadow: none;
+  }
 }
 
 .team-background-image {
@@ -26,6 +29,9 @@
   }
   background-size: cover;
   text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+  .button {
+    text-shadow: none;
+  }
 }
 
 .work-desk-background-image {
@@ -42,10 +48,17 @@
   background-position: bottom center;
   background-size: cover;
   text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+  .button {
+    text-shadow: none;
+  }
 }
 
 .framed-margin {
   margin: 80px 1.8vw 1.8vw 1.8vw;
+
+  @media screen and (max-width: 1023px) {
+    margin: 60px 1.8vw 1.8vw 1.8vw;
+  }
 }
 
 .frame-1 {

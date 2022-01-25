@@ -11,7 +11,7 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
 
   // Copy `img/` + `fonts/` to `_site/img`
-  eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/fonts/**/*.*[^svg]");
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
