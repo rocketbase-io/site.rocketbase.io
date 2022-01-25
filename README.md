@@ -1,5 +1,5 @@
 # rocketbase website
-![rocketbase-brand](src/img/rocketbase-brand-logo.png)
+![rocketbase-brand](src/img/logo-dark.png)
 
 static website repository of rocketbase.io
 
