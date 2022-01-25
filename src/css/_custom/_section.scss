@@ -52,7 +52,12 @@
       padding-bottom: 2rem;
     }
   }
+}
 
+.content {
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .navbar {
@@ -131,7 +136,7 @@
   }
 }
 
-.tile {
+.impression {
   h3 {
     font-size: 28px;
     font-family: $family-hand-written;
