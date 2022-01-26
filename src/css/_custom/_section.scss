@@ -80,20 +80,16 @@
 
   &-menu {
     .navbar-item {
-      a {
-        color: $grey-3;
+      color: $black;
 
-        &:hover {
-          background-color: transparent;
-          color: $coral;
-        }
+      &.active, &:hover {
+        background-color: $space-blue;
+        color: $white;
+        text-decoration: none;
       }
-
-      &.active {
-        a {
-          color: $coral;
-          text-decoration: underline;
-        }
+      a {
+        color: inherit;
+        line-height: 3rem;
       }
     }
 
@@ -104,27 +100,28 @@
       }
 
       .navbar-item {
-        a {
           color: $white;
-
           text-shadow: $night-blue 0px 0px 5px, $night-blue 0px 0px 10px, $night-blue 0px 0px 15px, $night-blue 0px 0px 20px, $night-blue 0px 0px 30px, $night-blue 0px 0px 40px, $night-blue 0px 0px 75px;
 
-          &:hover {
-            color: white;
-            text-shadow: $black 0px 0px 5px, $black 0px 0px 10px, $white 0px 0px 15px, $white 0px 0px 20px, $white 0px 0px 30px, $white 0px 0px 40px, $white 0px 0px 75px;
-          }
-        }
-
-        &.active {
-          a {
+          &:hover, &.active {
+            background-color: $coral;
             color: $white;
-            text-decoration: underline;
+            text-decoration: none;
+            text-shadow: none;
+            a {
+              text-shadow: none;
+            }
+          }
+
+          a {
+            color: inherit;
+            line-height: 3rem;
           }
         }
       }
+
     }
 
-  }
 }
 
 .reverse-columns {
