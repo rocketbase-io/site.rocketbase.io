@@ -143,6 +143,15 @@
 .tech-mariadb:before {
   content: "\74";
 }
+.tech-postgres:before {
+  content: "\76";
+}
+.tech-react:before {
+  content: "\75";
+}
+.tech-tailwind-css:before {
+  content: "\77";
+}
 
 
 
@@ -251,7 +260,20 @@
   background-color: #231F20;
   color: #fff;
 }
+.color-postgres {
+  background-color: #336791;
+  color: #fff;
+}
 .color-database {
   background-color: #6ab0dc;
   color: #fff;
+}
+.color-react {
+  background-color: #61dafb;
+  color: #fff;
+}
+
+.color-tailwind {
+  background-color: #0b1120;
+  color: #0ea4e9;
 }
