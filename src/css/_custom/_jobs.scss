@@ -1,0 +1,31 @@
+#accordion_jobs section .section-title {
+  a {
+    cursor: pointer;
+    &:link, &:visited {
+      color: black;
+    }
+  }
+
+  .link--arrowed {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+
+    .arrow-icon {
+      position: relative;
+      top: -1px;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      .arrow-icon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+}

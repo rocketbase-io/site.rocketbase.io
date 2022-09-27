@@ -59,6 +59,9 @@ var callback = function(){
       };
     });
   }
+
+  // init bulma collapse
+  bulmaCollapsible.attach('.is-collapsible');
 };
 
 if (

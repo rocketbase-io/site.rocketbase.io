@@ -8,7 +8,7 @@
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "sass": "sass --style=compressed src/css/style.scss src/css/style.css",
-    "uglify": "uglifyjs src/js/main.js --compress --mangle -o src/js/script.min.js"
+    "uglify": "uglifyjs node_modules/@creativebulma/bulma-collapsible/dist/js/bulma-collapsible.min.js src/js/main.js --compress --mangle -o src/js/script.min.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "@creativebulma/bulma-collapsible": "^1.0.4",
     "bulma": "^0.9.4",
     "html-minifier": "^4.0.0",
     "luxon": "^3.0.3",
