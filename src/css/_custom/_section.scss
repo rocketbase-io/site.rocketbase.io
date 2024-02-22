@@ -91,6 +91,24 @@
         color: inherit;
         line-height: 3rem;
       }
+      &.productspace {
+        background: $white;
+        color: #0a0a0a;
+        .button {
+          background: $coral;
+          color: $white;
+          padding-left: 3px;
+          span {
+            display: inline-block;
+            background-image: url('/img/productspace-logo-white.png');
+            background-size: 28px 28px;
+            background-position: center left;
+            background-repeat: no-repeat;
+            padding-left: 30px;
+          }
+
+        }
+      }
     }
 
     &.has-text-white {
@@ -116,6 +134,27 @@
           a {
             color: inherit;
             line-height: 3rem;
+          }
+
+
+          &.productspace {
+            background: transparent;
+            text-shadow: none;
+            .button {
+              background: $white;
+              color: $black;
+              text-shadow: none;
+
+              padding-left: 3px;
+              span {
+                display: inline-block;
+                background-image: url('/img/productspace-logo-black.png');
+                background-size: 28px 28px;
+                background-position: center left;
+                background-repeat: no-repeat;
+                padding-left: 30px;
+              }
+            }
           }
         }
       }
